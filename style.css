@@ -1,0 +1,192 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #222937;
+  font-family: 'Segoe UI', sans-serif;
+  color: #191d25;
+  overscroll-behavior: none;
+  user-select: none;
+}
+#game-root {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(160deg, #23293d 0%, #0e1119 100%);
+  padding-bottom: 40px;
+}
+.g-title {
+  font-size: 2.4em;
+  margin: 40px 0 14px 0;
+  font-weight: 700;
+  color: #ffda60;
+  letter-spacing: 2px;
+  text-shadow: 2px 4px 8px #22293788;
+}
+.g-subtitle {
+  font-size: 1.1em;
+  color: #dbe6f2;
+  margin-bottom: 28px;
+}
+.g-btn {
+  background: linear-gradient(90deg, #7eaeff 0%, #ffd46d 100%);
+  border: none;
+  border-radius: 8px;
+  color: #222;
+  font-size: 1.16em;
+  font-weight: 600;
+  padding: 13px 32px;
+  margin: 8px 0;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.1s;
+  box-shadow: 0 2px 8px #2b334988;
+}
+.g-btn:active {
+  box-shadow: 0 0 2px #23293d99;
+}
+.g-panel {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #1d233044;
+  padding: 22px 18px;
+  margin: 12px 0;
+  width: 98vw;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.g-section-title {
+  font-size: 1.22em;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  color: #3884ff;
+  text-shadow: 0 1px 0 #fff4;
+}
+.g-task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.g-task {
+  display: flex;
+  align-items: flex-start;
+  background: #f6faff;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  padding: 10px 10px 8px 10px;
+  box-shadow: 0 1px 6px #b1caed22;
+}
+.g-task-desc {
+  flex: 1 1 auto;
+  font-size: 1.06em;
+  color: #222;
+}
+.g-task-prio {
+  font-size: 0.95em;
+  color: #ffd700;
+  margin-right: 8px;
+  font-weight: 700;
+  min-width: 26px;
+  text-align: right;
+}
+.g-task-btn {
+  background: #3884ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 14px;
+  margin-left: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.g-task-btn:active {
+  background: #2761b1;
+}
+.g-task-completed {
+  text-decoration: line-through;
+  color: #9ba3b5;
+  opacity: 0.65;
+}
+.g-progress-bar {
+  width: 100%;
+  height: 16px;
+  background: #eaf1fa;
+  border-radius: 8px;
+  margin: 10px 0 6px 0;
+  overflow: hidden;
+  position: relative;
+}
+.g-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffe578 0%, #7eaeff 100%);
+  border-radius: 8px;
+  transition: width 0.4s cubic-bezier(.6,.2,.2,1);
+}
+.g-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.02em;
+  margin-bottom: 4px;
+}
+.g-timer {
+  font-size: 1.1em;
+  color: #3f4e68;
+  font-weight: 600;
+}
+.g-summary {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.g-score {
+  font-size: 1.55em;
+  color: #3884ff;
+  font-weight: 700;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.g-plan-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.g-plan-desc {
+  flex: 1 1 auto;
+  font-size: 1.02em;
+  color: #222;
+}
+.g-plan-btn {
+  background: #ffd46d;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 12px;
+  margin-left: 8px;
+  font-size: 0.98em;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.g-plan-btn:active {
+  background: #efc24c;
+}
+@media (max-width: 520px) {
+  .g-panel {
+    max-width: 98vw;
+    padding: 12px 4vw;
+  }
+  .g-title {
+    font-size: 1.45em;
+    margin-top: 22px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
